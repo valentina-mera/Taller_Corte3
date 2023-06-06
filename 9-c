@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float lado1, lado2, seno, rad, a ;
+    printf ( " Escribir el valor del lado 1, del lado 2 y el angulo del triangulo en este orden  \n"  );
+    scanf ("%f %f %f",&lado1, &lado2, &seno);
+    /* 
+    se debe pasar el angulo a radianes para que el programa funcione correctamente 
+*/
+    rad= (seno* 3.141592)/ 180;
+  //  A continuacion se usa la formula para encontrar el area del triangulo
+    a= (lado1*lado2* sin(rad))/2;
+    printf ( " \n El area del triangulo es %.4f " , a );
+    return 0;
+}
