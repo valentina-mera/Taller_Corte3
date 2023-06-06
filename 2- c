@@ -31,6 +31,7 @@ Algoritmo ejercicio _ 4
     Imprimir "Ingrese la calificación obtenida en el Taller"
 
     Leer taller
+    
 
 	
 
@@ -65,5 +66,32 @@ Algoritmo ejercicio _ 4
     Imprimir "La nota final es: ", notaFinal
 
 	
+
+FinAlgoritmo
+Algoritmo ejercicio_3
+
+    Definir tiempo, horas, minutos, sgundos Como real
+
+	    Escribir "Por favor ingresa el tiempo transcurrido en segundos: "
+
+    Leer tiempo
+
+	
+
+    horas <- tiempo / 3600
+
+    minutos <- (tiempo % 3600) / 60
+
+    sgundos <- (tiempo%60)
+
+	
+
+    Escribir "El tiempo total es: "
+
+    Escribir "Horas: ", horas
+
+    Escribir "Minutos: ", minutos
+
+    Escribir "Segundos: ", sgundos
 
 FinAlgoritmo
