@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+float sb,cd, cca, h, nh,nmd, sueldobruto, IRPF, sn,RIRPF ; 
+    printf ( " Por favor escribir los datos correspondintes  \n Sueldo base  " );
+    scanf("%f", &sb);
+    printf ( " complemento de destino\n " );
+    scanf("%f", &cd);
+    printf ( " complemento de cargo academico \n " );
+    scanf("%f", &cca);
+    printf ( " horas extras realizadas  \n " );
+    scanf("%f", &h);
+    printf ( " numero de hijos  \n " );
+    scanf("%f", &nh);
+    printf ( " numero de mayores dependientes  \n " );
+    scanf("%f", &nmd);
+    
+    /*
+     primero se saca el resultado del sueldo bruto, donde es la suma del Sueldo base,
+     complemento de destino,cargo academico y las horas extras realizadas,
+     el cual se multiplica en 23, porque es el valor de una hora extra
+    */ 
+    sueldobruto= sb+ cd+ cca + (h*23);
+    /*
+    Se utiliza el condicional if, donde dice que si el numero de hijos y el 
+    numero de mayores dependientes es mayor a cero se debe restar al Porcentaje los 
+    digitos correspondintes
+    */
+    if(nh>0 && nmd>0 ||nh>0 || nmd>0  ) 
+    {
+        IRPF= 24- ((2*nh)+(1*nmd));
+    }
+   // Pero si el numero de hijos y mayores dependientes es cero debe pasar lo siguiente 
+    else 
+    { 
+        IRPF= 24;
+    }
+    /*
+    A continuacion se saca la retencion por IRPF y para sacar el sueldo neto 
+    se resta el sueldo bruto y la retencion por IRPF:
+    */
+    RIRPF= sueldobruto* (IRPF/100);
+    sn= sueldobruto-RIRPF;
+    printf ( " \n Calculo de nomida\n Sueldo bruto: %.2f $ \n Porcentaje de IRPF: %.f\n Retencion por IRPF: %.2F $ \n Sueldo neto: %.2f$  \n", sueldobruto, IRPF, RIRPF, sn );
+    return 0;
+}
