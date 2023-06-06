@@ -1,0 +1,145 @@
+#include <stdio.h>
+#include <math.h>
+
+void volumen_cono()
+{
+    float radio = 14.5;
+    float height = 26.79;
+    float pi =3.141592;
+    
+    float volume_cone =(pi*radio*radio*height)/3;
+    printf ("El volumen del cono es: %f\n",volume_cone);
+
+}
+void Fahrenheit_Celsius()
+{
+    
+}
+void Seg_H_Min()
+{
+    
+}
+void Nota_Final()
+{
+    
+}
+void Ecu_1()
+{
+    
+}
+void Ecu_2()
+{
+    
+}
+void Nomina()
+{
+    
+}
+void Exp_a_d()
+{
+    int a = 1;
+    double d = 1.0;
+    
+    a = 46 % 9 + 4 * 4 - 2;
+    printf("a = %d\n", a);
+    
+    a = 45 + 43 % 5 * (23 * 3 % 2);
+    printf("a = %d\n", a);
+    
+    a = 45 + 45 * 50 % a--;
+    printf("a = %d\n", a);
+    
+    d = 1.5 * 3 + (++d);
+    printf("d = %lf\n", d);
+    
+    d = 1.5 * 3 + d++;
+    printf("d = %d\n", d);
+    
+    a %= 3 / a + 3;
+    printf("a = %d\n", a);
+}
+void Area_triangulo()
+{
+    
+}
+void Pres_Hipo()
+{
+    int capital, tiempo, int_anual, plazo;
+    double ratio, cuota, total_pagado, intereses;
+    printf("Ingrese la cantidad de capital prestado: ");
+    scanf("%d",&capital);
+    printf("Ingrese el interes anual: ");
+    scanf("%d", &int_anual);
+    printf("Ingrese los años del prestamo: ");
+    scanf("%d",&tiempo);
+    
+    plazo = tiempo *12;
+    ratio = int_anual/12.0/100.0; //ratio= int_mensual
+    
+    cuota = (capital*ratio)/(100 * (1 - pow(1+ratio/100, -plazo)));
+    total_pagado = cuota*plazo; 
+    intereses = total_pagado - capital;
+    
+    printf("Cuota mensual: %2.lf\n",cuota);
+    printf("Total pagado al terminar el plazo: %2.lf\n", total_pagado);
+    printf("Cantidad de amortizacon: %d\n", capital);
+    printf("Cantidad de los intereses: %2.lf\n", intereses);
+}
+int main()
+{
+    int opc;
+    do
+    {
+        printf("Seleccione el ejercicio que desea ver:\n");
+        printf("1. Volumen de un cono\n");
+        printf("2. Transformador de Fahrenheit a Celsius\n");
+        printf("3. Transformador de segundos a horas y minutos\n");
+        printf("4. Calcular nota final\n");
+        printf("5. Ecuacion #1\n");
+        printf("6. Ecuacion #2\n");
+        printf("7. Nomina de un empleado\n");
+        printf("8. Valores asignados a las expresiones a y d\n");
+        printf("9. Area de un triangulo\n");
+        printf("10.Prestamo Hipotecario\n");
+        
+        scanf("%d", &opc);
+           switch(opc)
+        {
+            case 1:
+            volumen_cono();
+            break;
+            case 2:
+            Fahrenheit_Celsius();
+            break;
+            case 3:
+            Seg_H_Min();
+            break;
+            case 4:
+            Nota_Final();
+            break;
+            case 5:
+            Ecu_1();
+            break;
+            case 6:
+            Ecu_2();
+            break;
+            case 7:
+            Nomina();
+            break;
+            case 8:
+            Exp_a_d();
+            break;
+            case 9:
+            Area_triangulo();
+            break;
+            case 10:
+            Pres_Hipo();
+            break;
+            default:
+            printf("Saliendo...");
+            break;
+        } 
+    } while(opc !=0);
+    
+    return 0;
+}
