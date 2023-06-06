@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float f,m, r,c ;
+    printf (" Escribir un numero real en grados Faherenheit \n \n");
+    scanf ("%f", &f);
+    // se restan los grados Faherenheit con 32 
+    r= f-32;
+    // Se multiplica el resultado dado arriba entre 5
+    m= 5 * r;
+    // Por ultimo se divide entre 9, para poder convertir los grados Faherenheit a Celsius
+    c= m/9;
+    printf ( " \n La conversion de los gardos Faherenheit a Celsius es %f \n " , c);
+    return 0;
+}
