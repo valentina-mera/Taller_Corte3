@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-void volumen_cono() //ejercio_1
+void volumen_cono() //ejercicio_1
 {
     float radio = 14.5;
     float height = 26.79;
@@ -10,7 +10,7 @@ void volumen_cono() //ejercio_1
     float volume_cone =(pi*radio*radio*height)/3; // formula para hallar volumen de un cono
     printf ("El volumen del cono es: %f\n",volume_cone);
 }
-void Fahrenheit_Celsius()//ejercio_2
+void Fahrenheit_Celsius()//ejercicio_2
 {
     float f,m, r,c ;
     printf (" Escribir un numero real en grados Faherenheit \n \n");
@@ -23,7 +23,7 @@ void Fahrenheit_Celsius()//ejercio_2
     c= m/9;
     printf ( " \n La conversion de los gardos Faherenheit a Celsius es %f \n " , c);
 }
-void Seg_H_Min()//ejercio_3
+void Seg_H_Min()//ejercicio_3
 {
     float tiempo, horas, minutos, segundos;
 
@@ -38,7 +38,7 @@ void Seg_H_Min()//ejercio_3
     printf("Minutos: %.0f\n", minutos);
     printf("Segundos: %.0f\n", segundos);
 }
-void Nota_Final()//ejercio_4
+void Nota_Final()//ejercicio_4
 {
     float parcial, taller, quiz, ejercicioClase, quiz2, exposicion, notaFinal;
     printf("Para poder calcular tu nota final porfavor ayudanos con los siguientes datos\n");
@@ -68,7 +68,7 @@ void Nota_Final()//ejercio_4
     printf("\nLa nota final es: %.2f\n", notaFinal);
 
 }
-void Ecu_1()//ejercio_5
+void Ecu_1()//ejercicio_5
 {
     int r, a, b, c, d;
     float resultado;
@@ -92,7 +92,7 @@ void Ecu_1()//ejercio_5
 
     printf("Ya remplazados los valores el resultado es : %.2f\n", resultado);
 }
-void Ecu_2()//ejercio_6
+void Ecu_2()//ejercicio_6
 {
     int x, y; 
     float sigma, lambda, alfa, f  ;
@@ -106,7 +106,7 @@ void Ecu_2()//ejercio_6
    f=( 3*((x+sigma*y)/ (pow(x,2) - pow(y,2))))- (lambda * (alfa-13.7));
     printf ( " \n El resultado de la ecuacion es   %.4f " , f );
 }
-void Nomina()//ejercio_7
+void Nomina()//ejercicio_7
 {
     float sb,cd, cca, h, nh,nmd, sueldobruto, IRPF, sn,RIRPF ; 
     printf ( " Por favor escribir los datos correspondintes  \n Sueldo base  " );
@@ -154,7 +154,7 @@ void Nomina()//ejercio_7
     printf("Retencion por IRPF: %.2F $", RIRPF);
     printf("\n Sueldo neto: %.2f$ \n",sn);
 }
-void Exp_a_d()//ejercio_8
+void Exp_a_d()//ejercicio_8
 {
     int a = 1;
     double d = 1.0;
@@ -177,7 +177,7 @@ void Exp_a_d()//ejercio_8
     a %= 3 / a + 3;
     printf("a = %d\n", a);
 }
-void Area_triangulo()//ejercio_9
+void Area_triangulo()//ejercicio_9
 {
     float lado1, lado2, seno, rad, a ;
     printf ( " Escribir el valor del lado 1, del lado 2 y el angulo del triangulo en este orden  \n"  );
@@ -190,7 +190,7 @@ void Area_triangulo()//ejercio_9
     a= (lado1*lado2* sin(rad))/2;
     printf ( " \n El area del triangulo es %.4f " , a );
 }
-void Pres_Hipo()//ejercio_10
+void Pres_Hipo()//ejercicio_10
 {
     int capital, tiempo, int_anual, plazo;
     double ratio, cuota, total_pagado, intereses;
