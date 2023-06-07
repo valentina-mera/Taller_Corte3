@@ -1,4 +1,4 @@
-Algoritmo ejercicio _ 4
+Algoritmo ejercicio _4
 
 	Definir parcial, taller, quiz, ejercicioClase, quiz2, exposicion, nota, notaFinal Como real	
 
