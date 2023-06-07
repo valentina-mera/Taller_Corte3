@@ -18,7 +18,7 @@ Algoritmo prestamo_hipotecario
 
 	plazo = tiempo*12;
 
-	ratio = in_anual/12/100;//el ratio es el interes mensual
+	ratio = in_anual/12/100;
 
 	cuota = (capital*ratio)/(100*(1-(1+ratio/100)^(-plazo)))
 
